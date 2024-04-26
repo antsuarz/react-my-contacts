@@ -11,6 +11,7 @@ function App() {
     fetch('https://randomuser.me/api/?results=20')
       .then(response => response.json())
       .then(contacts => setContacts(contacts.results));
+     
   }, [])
   const [searchField, setSearchField] = useState('');
 
@@ -38,7 +39,6 @@ function App() {
     setContacts([...za]); //clone the list
   }
 
-
   return (
     <div className='tc '>
       <header>
@@ -46,9 +46,9 @@ function App() {
       </header>
       {contacts.length === 0 ? <h2 className='f2'>Loading...</h2> :
         <>
-          <Searcher searchChange={onSearchChange}  az={onAZ} za={onZA} />
+          <Searcher searchChange={onSearchChange} az={onAZ} za={onZA} />
           <Scroll>
-            <CardList contacts={onSearchChange} />
+            <CardList contacts={searchedContacts} />
           </Scroll>
         </>
 

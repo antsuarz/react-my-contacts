@@ -1,6 +1,6 @@
 import CardModal from './CardModal';
 
-const Card = ({ name, email, photo, phone, contact }) => {
+const Card = ({ name, email, photo, phone, contact}) => {
     return (
         <div className='bg-light-blue dib br4 pa3 ma3 shadow-5 grow'>
             <img alt='{name}' src={photo} />

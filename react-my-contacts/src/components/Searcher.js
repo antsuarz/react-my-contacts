@@ -1,6 +1,6 @@
 import { BiSortAZ, BiSortZA } from "react-icons/bi"
 
-const Searcher = ({ searchChange }) => {
+const Searcher = ({ searchChange , az, za}) => {
     return (
         <div className='pa2 bg-lightest-blue'>
             <div className="absolute f1 ml3">
