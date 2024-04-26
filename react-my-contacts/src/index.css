@@ -16,4 +16,7 @@ body {
   font-family: 'Sagobi-d9GnV';
   color: #050324ce;
   }
-  
+  .leaflet-container {
+    width: 450px;
+    height: 400px;
+    }
